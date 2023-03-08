@@ -48,8 +48,6 @@ def hello(name) -> str:
     weekday = datetime.today().weekday()
     weekdays_tuple = tuple(['Хорошего понедельника', 'Хорошего вторника', 'Хорошей среды', 'Хорошего четверга',
                             'Хорошей пятницы', 'Хорошей субботы', 'Хорошего воскресенья'])
-    if name in weekdays_tuple:
-        raise ValueError("Вы ввели не имя")
     return f"Привет, {name}. {weekdays_tuple[weekday]}"
 
 
@@ -95,8 +93,9 @@ def calculate_year(year):
             sum += value
     return f"Сумма ваших затрат за {year} год: {sum}"
 
+
 @app.route("/calculate/<int:year>/<int:month>")
-def calculate_year_month(year,month):
+def calculate_year_month(year, month):
     sum = 0
     for key, value in storage[year][month].items():
         sum += value
