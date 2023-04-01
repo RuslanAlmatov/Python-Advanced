@@ -1,0 +1,14 @@
+<--""
+   Level WARNING
+   |
+   o<--"app"
+   |   Level DEBUG
+   |   Handler Stream <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+   |     Level DEBUG
+   |     Formatter fmt="'%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s'" datefmt=None
+   |   Handler <LayredHandler (DEBUG)>
+   |     Level DEBUG
+   |     Formatter fmt="'%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s'" datefmt=None
+   |
+   o<--"utils"
+       Level NOTSET so inherits level WARNING
