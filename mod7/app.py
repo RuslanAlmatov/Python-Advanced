@@ -4,6 +4,7 @@ import logging_tree as logging_tree
 
 from utils import *
 from logging_config import dict_config
+
 logging.config.dictConfig(dict_config)
 
 with open("logging_tree.txt", "w") as f:
@@ -27,3 +28,4 @@ else:
     logger.error("Вы ввели не числа")
     raise ValueError("Вы ввели не числа")
 logger.info(f"{number1} {operation} {number2} = {result}")
+logger.info("ÎŒØ∏‡°⁄·°€йцукен")

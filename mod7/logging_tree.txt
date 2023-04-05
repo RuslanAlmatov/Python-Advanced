@@ -11,4 +11,7 @@
    |     Formatter fmt="'%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s'" datefmt=None
    |
    o<--"utils"
-       Level NOTSET so inherits level WARNING
+       Level INFO
+       Handler TimedRotatingFile 'D:\\Linux1\\mod71\\utils.log' when='H' interval=36000 backupCount=1
+         Level INFO
+         Formatter fmt="'%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s'" datefmt=None
