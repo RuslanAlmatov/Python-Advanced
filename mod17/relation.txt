@@ -1,0 +1,5 @@
+actors, movie_cast, movie, - один ко многим
+
+director, movie_direction, movie - один ко многим
+
+movie, oscar_awarded - один к одному
