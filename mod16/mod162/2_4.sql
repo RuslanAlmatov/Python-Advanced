@@ -1,0 +1,1 @@
+select order_no, full_name from "order", customer where customer.manager_id is null
