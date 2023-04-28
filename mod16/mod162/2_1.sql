@@ -1,6 +1,9 @@
-select "order".order_no, customer.full_name, manager.full_name, "order".purchase_amount, "order".date
-from customer,
+SELECT customer.full_name      AS "Имя покупателя",
+       manager.full_name       AS "Имя продавца",
+       "order".purchase_amount AS "Сумма",
+       "order".date            AS "Дата"
+FROM customer,
      manager,
      "order"
-where "order".customer_id = customer.customer_id
-  and "order".manager_id = manager.manager_id;
+WHERE ("order".customer_id = customer.customer_id)
+  AND ("order".manager_id = manager.manager_id);

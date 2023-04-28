@@ -1,1 +1,3 @@
-select order_no, full_name from "order", customer where customer.manager_id is null
+SELECT full_name
+FROM customer
+WHERE manager_id IS NULL
